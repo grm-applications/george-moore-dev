@@ -1,0 +1,90 @@
+
+
+.canvas {
+	position: absolute;
+	top: 0px;
+	min-height: calc(100vh);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.canvas header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+	padding: 20px;
+}
+
+.canvas header h1 {
+	color: white;
+	font-family: Nunito-Light;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.canvas header p {
+	margin: 0px;
+	text-align: center;
+	color: white;
+	font-family: Nunito-Light;
+	margin-bottom: 20px;
+}
+
+h1 span {
+	font-family: Nunito-SemiBold;
+	color: #FF005E;
+}
+
+.canvas .links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}	
+
+.canvas .links a {
+	height: 40px;
+	margin: 5px;
+
+}	
+.canvas .links a img {
+	height: 100%;
+}
+
+
+@media screen and (max-width: 750px) {
+	.canvas header {
+		width: 95%;
+	}
+	.canvas header h1 {
+		font-size: 25px;
+	}
+	.canvas header p {
+		font-size: 14px;
+	}
+	.canvas .links a {
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.canvas {
+		position: static;
+		min-height: calc(100vh - 80px);
+	}
+}
+
+@media screen and (max-height:414px) {
+	.canvas {
+		position: static;
+		min-height: calc(100vh - 80px);
+	}
+}
+
+
